@@ -1,0 +1,13 @@
+def first_repeated(text):
+    seen = []
+
+    for char in text:
+        if char in seen:
+            return char
+
+        seen.append(char)
+
+    return None
+
+
+print(first_repeated("python programming"))

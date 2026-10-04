@@ -1,0 +1,13 @@
+def find_duplicate(items):
+    seen = []
+
+    for item in items:
+        if item in seen:
+            print("Duplicate:", item)
+            break
+
+        seen.append(item)
+
+
+items = ["red", "blue", "green", "red", "yellow"]
+find_duplicate(items)
