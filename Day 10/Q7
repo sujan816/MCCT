@@ -1,0 +1,10 @@
+a = ["Python", "Java", "C", "JavaScript", "C++"]
+
+for a in a:
+    print(a)
+
+for a in a:
+    print(a, "- I am learning...")
+
+for a in a:
+    print(a, "-", len(a), "characters")

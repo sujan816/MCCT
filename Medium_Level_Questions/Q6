@@ -1,0 +1,19 @@
+student = {
+    "name": "Ram",
+    "age": 19,
+    "course": "BCA",
+    "marks": 78
+}
+
+print("Original student:", student)
+
+student["marks"] = student["marks"] + 5
+
+print("Student with updated marks:", student)
+if student["marks"] >= 40:
+    student["status"] = "Pass"
+else:
+    student["status"] = "Fail"
+
+
+print("Updated student:", student)

@@ -1,0 +1,11 @@
+numbers = [45, 12, 78, 3, 56, 23, 89, 10]
+print("Original:", numbers)
+numbers.sort()
+print("Ascending:", numbers)
+numbers.sort(reverse=True)
+print("Descending:", numbers)
+print("Smallest:", min(numbers))
+print("Largest:", max(numbers))
+names = ["Ram", "Sita", "Hari", "Gita", "John"]
+names.sort()
+print("Names:", names)

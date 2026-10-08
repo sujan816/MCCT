@@ -1,0 +1,17 @@
+cart = ["apple", "milk", "bread", "apple", "eggs", "milk"]
+
+unique_cart = []
+
+for item in cart:
+    if item not in unique_cart:
+        unique_cart.append(item)
+
+unique_cart.append("cheese")
+
+unique_cart.remove("bread")
+
+
+unique_cart.sort()
+
+print("Final cart:", unique_cart)
+print("Number of different items:", len(unique_cart))

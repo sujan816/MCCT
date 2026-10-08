@@ -1,0 +1,52 @@
+students = {
+    101: {
+        "name": "Ram",
+        "age": 20,
+        "course": "Python"
+    },
+    102: {
+        "name": "Sita",
+        "age": 21,
+        "course": "Java"
+    },
+    103: {
+        "name": "Hari",
+        "age": 19,
+        "course": "Python"
+    }
+}
+
+# Display all students
+for student_id, details in students.items():
+    print(student_id, details)
+
+# Display student 102
+print("Student 102:", students[102])
+
+# Change student 103's course
+students[103]["course"] = "Data Science"
+
+# Add student 104
+students[104] = {
+    "name": "Gita",
+    "age": 22,
+    "course": "Python"
+}
+
+# Remove student 101
+del students[101]
+
+# Display final dictionary
+print("Final database:", students)
+
+# Challenge: Search using student ID
+try:
+    student_id = int(input("Enter student ID: "))
+
+    if student_id in students:
+        print(students[student_id])
+    else:
+        print("Student not found.")
+
+except ValueError:
+    print("Please enter a valid numeric ID.")

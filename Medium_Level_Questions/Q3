@@ -1,0 +1,12 @@
+names = ["Ram", "Sita", "Hari", "Ram", "Anu", "Sita", "Mina"]
+
+unique_names = []
+
+for name in names:
+    if name not in unique_names:
+        unique_names.append(name)
+
+unique_names.sort()
+
+print("Unique names:", unique_names)
+print("Total unique students:", len(unique_names))

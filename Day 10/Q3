@@ -1,0 +1,6 @@
+A = ["Red", "Blue", "Green", "Yellow", "Black"]
+A[1] = "Purple"
+A[4] = "White"
+A.remove("Green")
+A.pop()
+print(A)

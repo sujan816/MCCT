@@ -1,0 +1,7 @@
+numbers = [15, 25, 10, 30, 20, 5]
+
+print("Total:", sum(numbers))
+print("Smallest:", min(numbers))
+print("Largest:", max(numbers))
+print("Average:", sum(numbers) / len(numbers))
+print("Number of elements:", len(numbers))

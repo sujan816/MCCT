@@ -1,0 +1,13 @@
+sentence = input("Enter a sentence: ")
+
+sentence = sentence.strip()
+sentence = sentence.lower()
+words = sentence.split()
+total_words = len(words)
+python_count = words.count("python")
+longest_word = max(words, key=len)
+
+print("Clean sentence:", sentence)
+print("Total words:", total_words)
+print("Python appears:", python_count, "times")
+print("Longest word:", longest_word)

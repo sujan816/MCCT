@@ -1,0 +1,25 @@
+product = {
+    "name": "Laptop",
+    "brand": "Dell",
+    "price": 75000,
+    "quantity": 5
+}
+
+# Display product information
+print("Product:", product["name"])
+print("Brand:", product["brand"])
+print("Price:", product["price"])
+print("Quantity:", product["quantity"])
+
+# Calculate total stock value
+total_value = product["price"] * product["quantity"]
+print("Total value:", total_value)
+
+# Sell two laptops
+product["quantity"] -= 2
+
+print("Remaining quantity:", product["quantity"])
+
+# Calculate updated stock value
+new_value = product["price"] * product["quantity"]
+print("Updated stock value:", new_value)
